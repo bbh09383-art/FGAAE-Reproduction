@@ -1,0 +1,61 @@
+{
+  "training_complete": true,
+  "arm": "C",
+  "seed": 2025,
+  "selection": {
+    "selected_by": "validation ROC-AUC; negative reconstruction loss when only one class is available",
+    "best_epoch": 3,
+    "best_validation_selection_score": 0.9154543465483735,
+    "epochs_ran": 60,
+    "early_stopped": false,
+    "test_used_for_selection": false
+  },
+  "uncalibrated_auc": 0.9154543465483735,
+  "reconstruction_auc": 0.9154103239323517,
+  "uncalibrated_model_sha256": "526fb297c829feb4eeb2ba20367b46954a9bc35ca77090004946ab2326410e6a",
+  "audit": {
+    "parameter_changes": {
+      "encoder": 0.15446973792522314,
+      "decoder": 1.3290286292943905,
+      "teacher": 0.0,
+      "student": 1.044152140706266,
+      "critic": 4.67285944603631
+    },
+    "encoder_bn_changes_selected": {
+      "encoder.convolutions.1.running_mean": 0.0,
+      "encoder.convolutions.1.running_var": 0.0,
+      "encoder.convolutions.1.num_batches_tracked": 0.0,
+      "encoder.convolutions.4.running_mean": 0.0,
+      "encoder.convolutions.4.running_var": 0.0,
+      "encoder.convolutions.4.num_batches_tracked": 0.0,
+      "encoder.convolutions.8.running_mean": 0.0,
+      "encoder.convolutions.8.running_var": 0.0,
+      "encoder.convolutions.8.num_batches_tracked": 0.0
+    },
+    "encoder_bn_changes_latest": {
+      "encoder.convolutions.1.running_mean": 0.0,
+      "encoder.convolutions.1.running_var": 0.0,
+      "encoder.convolutions.1.num_batches_tracked": 0.0,
+      "encoder.convolutions.4.running_mean": 0.0,
+      "encoder.convolutions.4.running_var": 0.0,
+      "encoder.convolutions.4.num_batches_tracked": 0.0,
+      "encoder.convolutions.8.running_mean": 0.0,
+      "encoder.convolutions.8.running_var": 0.0,
+      "encoder.convolutions.8.num_batches_tracked": 0.0
+    },
+    "generator_updates": 4740,
+    "critic_updates": 23700,
+    "retained_per_iteration": [
+      20000,
+      20000,
+      20000
+    ],
+    "stage1_reused": true,
+    "stage2_epochs": 60,
+    "active_modules": {
+      "adversarial": true,
+      "features": true,
+      "aqt": false
+    }
+  }
+}

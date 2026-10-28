@@ -1,0 +1,3 @@
+# Preserve exact bytes for frozen sources, score tables, and SHA-256 manifests.
+# Automatic LF/CRLF conversion would invalidate the recorded experiment hashes.
+* -text

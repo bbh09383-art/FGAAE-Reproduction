@@ -1,0 +1,23 @@
+{
+  "scope": "Completed two-group diagnostic and post-hoc analysis; no changes to original five-group results or Base/B formal models.",
+  "old_artifacts_unchanged": true,
+  "training_code_unchanged_since_registration": true,
+  "report_links_verified": true,
+  "artifacts_sha256": {
+    "RESULTS.md": "f7a1c4f50baa9c58f2ed15c8f29bd0f9d33c3b1816abc7864b403608e0e5f9bc",
+    "report.json": "07c3171791d8118eaa0bc285ebae3d831aaa1ef85447cbf5101ec81ad404734f",
+    "auc_runs.csv": "b70646277db21e00b4313b9f1133a9f58ef8fa1db025e3eed18fc65d88f4c8ef",
+    "auc_summary.csv": "fa0a4452c80dbc2c0d3b534e4ca1df42e44a5075ce82653ad8ef22935ad90fed",
+    "conditional_effects_by_seed.csv": "d01d2300eca89cc60ed8d40c5f1eaf4debda30bcf5e18ec1903b7e851c2793f6",
+    "conditional_effects_summary.csv": "f971d792f09a7c20e900f19ca5c22d5137827f5bc879c523bcc4d081cddee2f6",
+    "feature_conditioning_by_seed.csv": "86e455089344b500057a106297f3e038dcac749b83e3b0562b9fd05c2ba6f356",
+    "feature_conditioning_summary.csv": "5e19d48d81d3d8a6354f772397498f3c7820b992eb702b63b3fb5e932a329dbd",
+    "training_pool_diagnostics.csv": "db747cd7df26512aa0f16f7abc4032d5aa3d6eb5bb721c13ab582c5cd243b84b",
+    "training_pool_overlap.csv": "3e9512ffe6175574652f1ce02db1035665397f679eb1eeb2dfea4c7b0aae7388",
+    "analysis_verification.json": "a3e8244b770b8daae78431d2c6799b020b1791494d982b5c90b950d3cffc5c7a",
+    "conditional_effects.png": "18a8b948ed0447fe27edb2ca659c9be2249fdc09c9f8d85f9b8c3805b8c3eb78",
+    "conditional_effects.pdf": "33c7250d1ec9fccf9ebc4b8838d137b3320a0e058aac1e076f7415734cbd2d42"
+  },
+  "analysis_code_sha256": "dbf4d27a6d3c65c5786b209cf245d61cd5dbcf72210daad53390ce51f7eff089",
+  "independent_test": false
+}

@@ -1,0 +1,93 @@
+{
+  "data_root": "D:\\荣珍代码与数据\\数据",
+  "target_band_hz": [
+    87000000,
+    108000000
+  ],
+  "files_excluding_environments_builds": 3404,
+  "unique_fscan_stems": 109,
+  "ix_copies": 225,
+  "native_840_files": 99,
+  "native_840_geometry_frames": 120186,
+  "native_840_clean_frames": 120186,
+  "grid_summary": [
+    {
+      "target_points": 420.0,
+      "files": 5,
+      "geometry_frames": 11534,
+      "clean_frames": 11534
+    },
+    {
+      "target_points": 840.0,
+      "files": 99,
+      "geometry_frames": 120186,
+      "clean_frames": 120186
+    },
+    {
+      "target_points": 1050.0,
+      "files": 3,
+      "geometry_frames": 892,
+      "clean_frames": 890
+    },
+    {
+      "target_points": null,
+      "files": 2,
+      "geometry_frames": 0,
+      "clean_frames": 0
+    }
+  ],
+  "missing_md": [
+    {
+      "stem": "FScan_638839497970970000_1",
+      "archived_md_locations": "[\"数据9.2/2025年6月边境路测数据/导出的监测数据.zip\"]"
+    },
+    {
+      "stem": "FScan_638839501556550000_1",
+      "archived_md_locations": "[\"数据9.2/2025年6月边境路测数据/导出的监测数据.zip\"]"
+    }
+  ],
+  "text_rows_audited": 87,
+  "text_status_counts": {
+    "do_not_use_before_reextracting": 9,
+    "sample_matches_raw": 78
+  },
+  "road_bin_files": 49,
+  "road_frames": 24318,
+  "road_clean_band_frames_inferred_format": 24318,
+  "road_empty_files": [
+    "数据9.2/2025年6月边境路测数据/2025年6月17日/沙坨子到断桥/52000001_0001_20250617_161726_30MHz_3000MHz_25kHz_V_M.bin",
+    "数据9.2/2025年6月边境路测数据/2025年6月17日/防川到沙坨子/52000001_0001_20250617_113910_30MHz_6000MHz_25kHz_V_M.bin",
+    "数据9.2/2025年6月边境路测数据/图们到和龙 图和线 g331/52000001_0001_20250618_192547_30MHz_3000MHz_25kHz_V_M.bin"
+  ],
+  "iq_spm_counts": {
+    ".iqd": 1253,
+    ".spm": 1331
+  },
+  "iq_metadata": {
+    "table_path": "贴标签后的数据/新建文件夹/吉林省IQ数据列表.xlsx",
+    "metadata_rows": 1332,
+    "modulation_label_rows": 542,
+    "communication_system_label_rows": 252,
+    "modulation_counts": {
+      "": 670,
+      "AM": 9,
+      "FM": 503,
+      "4FSK": 20,
+      "\\N": 120,
+      "8FSK": 2,
+      "2FSK": 5,
+      "MSK": 3
+    },
+    "label_warning": "modulation/system labels are NOT normal/anomaly labels; confidence columns may be machine predictions"
+  },
+  "scope": [
+    "Read-only audit of original data. No training, no bulk conversion, no archive extraction.",
+    "FScan: all IX records and every recoverable 87-108 MHz frame checked; other frequencies not quality-screened.",
+    "Clean means structural/heuristic quality checks passed, not a normal/anomaly ground-truth label.",
+    "abs(raw)>1500 is a conservative legacy-unit heuristic, not a proven instrument saturation limit.",
+    "Text row counts scan every byte, but numeric agreement is sampled at first three/final rows only.",
+    "Duplicates grouped by stem, full IX hash and sampled MD fingerprint; no full 28-GB-body cryptographic deduplication.",
+    "ZIP central directories inspected, payload CRC integrity not verified; nested ZIP and RAR payloads not decoded.",
+    "Road BIN layout inferred from repeated headers; physical units and instrument invalid flags still need confirmation."
+  ]
+}

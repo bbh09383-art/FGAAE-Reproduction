@@ -1,0 +1,130 @@
+{
+  "complete": true,
+  "new_runs": 6,
+  "new_epochs": 360,
+  "new_model_cuda_replay_frames": 63552,
+  "new_model_cuda_replay_max_score_difference": 0.0,
+  "auc_recomputed_from_exported_scores": true,
+  "auc_only_histories": true,
+  "old_results_and_models_unchanged": true,
+  "base_b_retrained": false,
+  "models": [
+    {
+      "arm": "AQT_only",
+      "seed": 2025,
+      "auc_recomputed": 0.9082909455180395,
+      "cuda_replay_frames": 10592,
+      "cuda_replay_max_score_difference": 0.0
+    },
+    {
+      "arm": "AQT_only",
+      "seed": 2026,
+      "auc_recomputed": 0.8445570691058544,
+      "cuda_replay_frames": 10592,
+      "cuda_replay_max_score_difference": 0.0
+    },
+    {
+      "arm": "AQT_only",
+      "seed": 2027,
+      "auc_recomputed": 0.815356180502281,
+      "cuda_replay_frames": 10592,
+      "cuda_replay_max_score_difference": 0.0
+    },
+    {
+      "arm": "GAN_only",
+      "seed": 2025,
+      "auc_recomputed": 0.9021132025726758,
+      "cuda_replay_frames": 10592,
+      "cuda_replay_max_score_difference": 0.0
+    },
+    {
+      "arm": "GAN_only",
+      "seed": 2026,
+      "auc_recomputed": 0.831651373642124,
+      "cuda_replay_frames": 10592,
+      "cuda_replay_max_score_difference": 0.0
+    },
+    {
+      "arm": "GAN_only",
+      "seed": 2027,
+      "auc_recomputed": 0.7969738375981805,
+      "cuda_replay_frames": 10592,
+      "cuda_replay_max_score_difference": 0.0
+    }
+  ],
+  "analysis_code_sha256": "dbf4d27a6d3c65c5786b209cf245d61cd5dbcf72210daad53390ce51f7eff089",
+  "extra_analysis": "Post-hoc feature x GAN contrasts with AQT fixed on, reusing original A/B/Full and new AQT_only. Not a complete three-factor factorial or a causal mechanism proof.",
+  "feature_contrasts": [
+    {
+      "score": "auc_primary",
+      "contrast": "GAN_with_features_AQT_on",
+      "mean": 0.03783223018410253,
+      "sample_std": 0.019438470032479987,
+      "seeds_positive": 3
+    },
+    {
+      "score": "auc_primary",
+      "contrast": "GAN_without_features_AQT_on",
+      "mean": -0.010018224615509866,
+      "sample_std": 0.004061962582695434,
+      "seeds_positive": 0
+    },
+    {
+      "score": "auc_primary",
+      "contrast": "feature_GAN_interaction_AQT_on",
+      "mean": 0.0478504547996124,
+      "sample_std": 0.022749751270389498,
+      "seeds_positive": 3
+    },
+    {
+      "score": "auc_primary",
+      "contrast": "features_with_GAN_AQT_on",
+      "mean": 0.06569425599276346,
+      "sample_std": 0.03090195157268096,
+      "seeds_positive": 3
+    },
+    {
+      "score": "auc_primary",
+      "contrast": "features_without_GAN_AQT_on",
+      "mean": 0.01784380119315106,
+      "sample_std": 0.009804578513825121,
+      "seeds_positive": 3
+    },
+    {
+      "score": "auc_reconstruction",
+      "contrast": "GAN_with_features_AQT_on",
+      "mean": 0.017948925705164487,
+      "sample_std": 0.02262219263874396,
+      "seeds_positive": 2
+    },
+    {
+      "score": "auc_reconstruction",
+      "contrast": "GAN_without_features_AQT_on",
+      "mean": -0.009982213498084888,
+      "sample_std": 0.004020726873839044,
+      "seeds_positive": 0
+    },
+    {
+      "score": "auc_reconstruction",
+      "contrast": "feature_GAN_interaction_AQT_on",
+      "mean": 0.027931139203249373,
+      "sample_std": 0.026359716692366055,
+      "seeds_positive": 3
+    },
+    {
+      "score": "auc_reconstruction",
+      "contrast": "features_with_GAN_AQT_on",
+      "mean": 0.04577494039640043,
+      "sample_std": 0.027804298049087756,
+      "seeds_positive": 3
+    },
+    {
+      "score": "auc_reconstruction",
+      "contrast": "features_without_GAN_AQT_on",
+      "mean": 0.01784380119315106,
+      "sample_std": 0.009804578513825121,
+      "seeds_positive": 3
+    }
+  ],
+  "independent_test": false
+}

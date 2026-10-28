@@ -1,0 +1,61 @@
+{
+  "training_complete": true,
+  "arm": "A",
+  "seed": 2025,
+  "selection": {
+    "selected_by": "validation ROC-AUC; negative reconstruction loss when only one class is available",
+    "best_epoch": 1,
+    "best_validation_selection_score": 0.9194221834203515,
+    "epochs_ran": 60,
+    "early_stopped": false,
+    "test_used_for_selection": false
+  },
+  "uncalibrated_auc": 0.9194221834203515,
+  "reconstruction_auc": 0.9194221834203515,
+  "uncalibrated_model_sha256": "e458ff910b25fac81dfa7cf0a01c350b2f8bdeff775ec97b1f2e6a926b810752",
+  "audit": {
+    "parameter_changes": {
+      "encoder": 0.07530209161517817,
+      "decoder": 0.7571712693805573,
+      "teacher": 0.0,
+      "student": 0.35751812745429096,
+      "critic": 0.0
+    },
+    "encoder_bn_changes_selected": {
+      "encoder.convolutions.1.running_mean": 0.0,
+      "encoder.convolutions.1.running_var": 0.0,
+      "encoder.convolutions.1.num_batches_tracked": 0.0,
+      "encoder.convolutions.4.running_mean": 0.0,
+      "encoder.convolutions.4.running_var": 0.0,
+      "encoder.convolutions.4.num_batches_tracked": 0.0,
+      "encoder.convolutions.8.running_mean": 0.0,
+      "encoder.convolutions.8.running_var": 0.0,
+      "encoder.convolutions.8.num_batches_tracked": 0.0
+    },
+    "encoder_bn_changes_latest": {
+      "encoder.convolutions.1.running_mean": 0.0,
+      "encoder.convolutions.1.running_var": 0.0,
+      "encoder.convolutions.1.num_batches_tracked": 0.0,
+      "encoder.convolutions.4.running_mean": 0.0,
+      "encoder.convolutions.4.running_var": 0.0,
+      "encoder.convolutions.4.num_batches_tracked": 0.0,
+      "encoder.convolutions.8.running_mean": 0.0,
+      "encoder.convolutions.8.running_var": 0.0,
+      "encoder.convolutions.8.num_batches_tracked": 0.0
+    },
+    "generator_updates": 4200,
+    "critic_updates": 0,
+    "retained_per_iteration": [
+      19000,
+      17164,
+      17013
+    ],
+    "stage1_reused": true,
+    "stage2_epochs": 60,
+    "active_modules": {
+      "adversarial": false,
+      "features": true,
+      "aqt": true
+    }
+  }
+}

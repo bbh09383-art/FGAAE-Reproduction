@@ -1,0 +1,8 @@
+{
+  "selected_by": "validation ROC-AUC; negative reconstruction loss when only one class is available",
+  "best_epoch": 5,
+  "best_validation_selection_score": 0.9021132025726758,
+  "epochs_ran": 60,
+  "early_stopped": false,
+  "test_used_for_selection": false
+}

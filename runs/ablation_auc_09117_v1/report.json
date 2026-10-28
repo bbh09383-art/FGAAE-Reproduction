@@ -1,0 +1,151 @@
+{
+  "complete": true,
+  "metrics": [
+    "ROC-AUC"
+  ],
+  "independent_test": false,
+  "summary": [
+    {
+      "arm": "Base",
+      "auc_mean": 0.8543304798747906,
+      "auc_sample_std": 0.049007997451613584,
+      "reconstruction_auc_mean": 0.8543304798747906,
+      "reconstruction_auc_sample_std": 0.049007997451613584,
+      "delta_full_minus_variant": 0.05741361654452126
+    },
+    {
+      "arm": "A",
+      "auc_mean": 0.8739118662352093,
+      "auc_sample_std": 0.045381169844545266,
+      "reconstruction_auc_mean": 0.8739118662352093,
+      "reconstruction_auc_sample_std": 0.045381169844545266,
+      "delta_full_minus_variant": 0.03783223018410253
+    },
+    {
+      "arm": "B",
+      "auc_mean": 0.8460498404265485,
+      "auc_sample_std": 0.05158619591200494,
+      "reconstruction_auc_mean": 0.8460858515439734,
+      "reconstruction_auc_sample_std": 0.051545265393133415,
+      "delta_full_minus_variant": 0.06569425599276335
+    },
+    {
+      "arm": "C",
+      "auc_mean": 0.9024557307013237,
+      "auc_sample_std": 0.045838760411096253,
+      "reconstruction_auc_mean": 0.8851005171690477,
+      "reconstruction_auc_sample_std": 0.02815578828951048,
+      "delta_full_minus_variant": 0.00928836571798819
+    },
+    {
+      "arm": "Full",
+      "auc_mean": 0.9117440964193119,
+      "auc_sample_std": 0.035992452097997195,
+      "reconstruction_auc_mean": 0.8918607919403739,
+      "reconstruction_auc_sample_std": 0.02374140687335903,
+      "delta_full_minus_variant": 0.0
+    }
+  ],
+  "new_training_runs": 12,
+  "epochs_per_run": 60,
+  "paired_differences": [
+    {
+      "arm": "Base",
+      "seed": 2025,
+      "full_auc": 0.9361560914235167,
+      "variant_auc": 0.9079935612902068,
+      "delta_full_minus_variant": 0.028162530133309938,
+      "reconstruction_delta_full_minus_variant": 0.0099120113197112
+    },
+    {
+      "arm": "Base",
+      "seed": 2026,
+      "full_auc": 0.9286670790394628,
+      "variant_auc": 0.8430549374947105,
+      "delta_full_minus_variant": 0.08561214154475227,
+      "reconstruction_delta_full_minus_variant": 0.043193352789736905
+    },
+    {
+      "arm": "Base",
+      "seed": 2027,
+      "full_auc": 0.8704091187949562,
+      "variant_auc": 0.8119429408394543,
+      "delta_full_minus_variant": 0.05846617795550191,
+      "reconstruction_delta_full_minus_variant": 0.059485572087301875
+    },
+    {
+      "arm": "A",
+      "seed": 2025,
+      "full_auc": 0.9361560914235167,
+      "variant_auc": 0.9194221834203515,
+      "delta_full_minus_variant": 0.01673390800316521,
+      "reconstruction_delta_full_minus_variant": -0.0015166108104335274
+    },
+    {
+      "arm": "A",
+      "seed": 2026,
+      "full_auc": 0.9286670790394628,
+      "variant_auc": 0.8736524594358164,
+      "delta_full_minus_variant": 0.0550146196036464,
+      "reconstruction_delta_full_minus_variant": 0.012595830848631029
+    },
+    {
+      "arm": "A",
+      "seed": 2027,
+      "full_auc": 0.8704091187949562,
+      "variant_auc": 0.8286609558494601,
+      "delta_full_minus_variant": 0.0417481629454961,
+      "reconstruction_delta_full_minus_variant": 0.04276755707729607
+    },
+    {
+      "arm": "B",
+      "seed": 2025,
+      "full_auc": 0.9361560914235167,
+      "variant_auc": 0.9027135287007956,
+      "delta_full_minus_variant": 0.03344256272272117,
+      "reconstruction_delta_full_minus_variant": 0.015191117630380058
+    },
+    {
+      "arm": "B",
+      "seed": 2026,
+      "full_auc": 0.9286670790394628,
+      "variant_auc": 0.8336257124058559,
+      "delta_full_minus_variant": 0.09504136663360685,
+      "reconstruction_delta_full_minus_variant": 0.05260804992778911
+    },
+    {
+      "arm": "B",
+      "seed": 2027,
+      "full_auc": 0.8704091187949562,
+      "variant_auc": 0.8018102801729938,
+      "delta_full_minus_variant": 0.06859883862196237,
+      "reconstruction_delta_full_minus_variant": 0.06952565363103214
+    },
+    {
+      "arm": "C",
+      "seed": 2025,
+      "full_auc": 0.9361560914235167,
+      "variant_auc": 0.9384540427289461,
+      "delta_full_minus_variant": -0.0022979513054293133,
+      "reconstruction_delta_full_minus_variant": 0.002495248677566342
+    },
+    {
+      "arm": "C",
+      "seed": 2026,
+      "full_auc": 0.9286670790394628,
+      "variant_auc": 0.9180613824446973,
+      "delta_full_minus_variant": 0.010605696594765512,
+      "reconstruction_delta_full_minus_variant": 0.006117632330131073
+    },
+    {
+      "arm": "C",
+      "seed": 2027,
+      "full_auc": 0.8704091187949562,
+      "variant_auc": 0.8508517669303278,
+      "delta_full_minus_variant": 0.01955735186462837,
+      "reconstruction_delta_full_minus_variant": 0.011667943306280848
+    }
+  ],
+  "full_reused": true,
+  "all_prespecified_arms_reported": true
+}

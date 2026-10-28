@@ -1,0 +1,61 @@
+{
+  "training_complete": true,
+  "arm": "AQT_only",
+  "seed": 2026,
+  "selection": {
+    "selected_by": "validation ROC-AUC; negative reconstruction loss when only one class is available",
+    "best_epoch": 21,
+    "best_validation_selection_score": 0.8445570691058544,
+    "epochs_ran": 60,
+    "early_stopped": false,
+    "test_used_for_selection": false
+  },
+  "uncalibrated_auc": 0.8445570691058544,
+  "reconstruction_auc": 0.8445570691058544,
+  "uncalibrated_model_sha256": "572b0fc39074bfe5406326c6c1879358805740b2962d0f3a3eb068c43cb58b19",
+  "audit": {
+    "parameter_changes": {
+      "encoder": 0.841543093737246,
+      "decoder": 6.057033327260087,
+      "teacher": 0.0,
+      "student": 0.0,
+      "critic": 0.0
+    },
+    "encoder_bn_changes_selected": {
+      "encoder.convolutions.1.running_mean": 0.0,
+      "encoder.convolutions.1.running_var": 0.0,
+      "encoder.convolutions.1.num_batches_tracked": 0.0,
+      "encoder.convolutions.4.running_mean": 0.0,
+      "encoder.convolutions.4.running_var": 0.0,
+      "encoder.convolutions.4.num_batches_tracked": 0.0,
+      "encoder.convolutions.8.running_mean": 0.0,
+      "encoder.convolutions.8.running_var": 0.0,
+      "encoder.convolutions.8.num_batches_tracked": 0.0
+    },
+    "encoder_bn_changes_latest": {
+      "encoder.convolutions.1.running_mean": 0.0,
+      "encoder.convolutions.1.running_var": 0.0,
+      "encoder.convolutions.1.num_batches_tracked": 0.0,
+      "encoder.convolutions.4.running_mean": 0.0,
+      "encoder.convolutions.4.running_var": 0.0,
+      "encoder.convolutions.4.num_batches_tracked": 0.0,
+      "encoder.convolutions.8.running_mean": 0.0,
+      "encoder.convolutions.8.running_var": 0.0,
+      "encoder.convolutions.8.num_batches_tracked": 0.0
+    },
+    "generator_updates": 4200,
+    "critic_updates": 0,
+    "retained_per_iteration": [
+      19000,
+      17164,
+      17013
+    ],
+    "stage1_reused": false,
+    "stage2_epochs": 60,
+    "active_modules": {
+      "adversarial": false,
+      "features": false,
+      "aqt": true
+    }
+  }
+}

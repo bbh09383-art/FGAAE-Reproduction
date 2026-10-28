@@ -1,0 +1,77 @@
+--- frozen/fgaae.py
++++ fgaae_ablation.py
+@@ -359,9 +359,9 @@
+         batch = batch.to(device)
+         reconstructed, latent = model(batch)
+         reconstruction_errors.extend((reconstructed - batch).square().mean(dim=(1, 2)).cpu().tolist())
+-        critic_values.extend(model.critic(reconstructed).cpu().tolist())
++        critic_values.extend(model.critic(reconstructed).cpu().tolist() if config.get("use_adversarial", True) else [0.0] * len(batch))
+         distillation_errors.extend(
+-            (model.student(latent) - model.teacher(latent)).square().mean(dim=1).cpu().tolist()
++            (model.student(latent) - model.teacher(latent)).square().mean(dim=1).cpu().tolist() if config.get("use_feature_guidance", True) else [0.0] * len(batch)
+         )
+     reconstruction_errors = np.asarray(reconstruction_errors, dtype=np.float64)
+     critic_values = np.asarray(critic_values, dtype=np.float64)
+@@ -582,13 +582,13 @@
+             seen = 0
+             for (real,) in loader:
+                 real = real.to(device)
+-                model.critic.requires_grad_(True)
++                model.critic.requires_grad_(config.get("use_adversarial", True))
+                 model.encoder.eval()
+                 model.decoder.eval()
+                 with torch.no_grad():
+                     generated, _ = model(real)
+                 critic_loss_sum = penalty_sum = 0.0
+-                for _ in range(config["critic_steps"]):
++                for _ in range(config["critic_steps"] if config.get("use_adversarial", True) else 0):
+                     critic_optimizer.zero_grad(set_to_none=True)
+                     penalty = gradient_penalty(model.critic, real, generated)
+                     critic_loss = (
+@@ -607,10 +607,13 @@
+                 generator_optimizer.zero_grad(set_to_none=True)
+                 generated, latent = model(real)
+                 reconstruction_loss = (generated - real).square().mean()
+-                adversarial_loss = -model.critic(generated).mean()
+-                with torch.no_grad():
+-                    teacher_features = model.teacher(latent)
+-                distillation_loss = (model.student(latent) - teacher_features).square().mean()
++                adversarial_loss = -model.critic(generated).mean() if config.get("use_adversarial", True) else generated.new_zeros(())
++                if config.get("use_feature_guidance", True):
++                    with torch.no_grad():
++                        teacher_features = model.teacher(latent)
++                    distillation_loss = (model.student(latent) - teacher_features).square().mean()
++                else:
++                    distillation_loss = generated.new_zeros(())
+                 generator_loss = (
+                     config["reconstruction_weight"] * reconstruction_loss
+                     + config["adversarial_weight"] * adversarial_loss
+@@ -625,7 +628,7 @@
+                     })
+                 generator_loss.backward()
+                 generator_optimizer.step()
+-                model.critic.requires_grad_(True)
++                model.critic.requires_grad_(config.get("use_adversarial", True))
+                 model.critic.train()
+                 batch_losses = {
+                     "generator": generator_loss.item(), "reconstruction": reconstruction_loss.item(),
+@@ -639,8 +642,7 @@
+             global_epoch += 1
+             calibrate_score_components(model, score_reference, config, device)
+             validation_result = evaluate(model, validation, config, device)
+-            decision_threshold = select_threshold(validation_result["scores"], validation_labels, config)
+-            validation_metrics = metrics(validation_labels, validation_result["scores"], decision_threshold)
++            validation_metrics = {"roc_auc": float(roc_auc_score(validation_labels, validation_result["scores"]))}
+             record = {
+                 "epoch": global_epoch, "iteration": iteration + 1,
+                 "epoch_in_iteration": epoch + 1, "retention_rate": rate,
+@@ -648,8 +650,7 @@
+                 **{f"train_{name}_loss": value / seen for name, value in totals.items()},
+                 "validation_reconstruction_loss": float(validation_result["reconstruction_error"].mean()),
+                 "validation_distillation_loss": float(validation_result["distillation_error"].mean()),
+-                "validation_threshold": decision_threshold,
+-                **{f"validation_{name}": validation_metrics[name] for name in ["accuracy", "precision", "recall", "f1", "roc_auc"]},
++                **{f"validation_{name}": validation_metrics[name] for name in ["roc_auc"]},
+                 **gradient_record,
+             }
+             if epoch_callback is not None:

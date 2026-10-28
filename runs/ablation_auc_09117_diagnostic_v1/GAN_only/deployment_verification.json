@@ -1,0 +1,20 @@
+[
+  {
+    "seed": 2025,
+    "frames": 10592,
+    "maximum_score_difference": 0.0,
+    "model_sha256": "be5b1eaf5e96ed05aa765657baff5e6202974170e50e91fdbcc2dfc93af1b16e"
+  },
+  {
+    "seed": 2026,
+    "frames": 10592,
+    "maximum_score_difference": 0.0,
+    "model_sha256": "54f38143b76e527c89160e4aec4d71813aebcba9ba5520bd22d5234aaaf00f03"
+  },
+  {
+    "seed": 2027,
+    "frames": 10592,
+    "maximum_score_difference": 0.0,
+    "model_sha256": "30a583f08c29a0b18084daa50980fbafcc9b882f3832d469ca06148c32dde541"
+  }
+]

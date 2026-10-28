@@ -1,0 +1,35 @@
+{
+  "word_file": "D:\\荣珍代码与数据\\代码\\FGAAE_论文复现\\汇报材料\\FGAAE_消融实验与补充诊断_汇报.docx",
+  "planned_pages": 6,
+  "images_embedded": 3,
+  "tables_editable": true,
+  "only_performance_metric": "ROC-AUC",
+  "input_sha256": {
+    "runs\\ablation_auc_09117_v1\\auc_summary.csv": "6646898e4f9e96554efdac8b5daf243346216c048742a8c9f1cc8f21d90e604d",
+    "runs\\ablation_auc_09117_v1\\auc_runs.csv": "14d96c0606c1aa71e0c8f770ebe6e56651d346255caf8fef07fcf27502cf9f08",
+    "runs\\ablation_auc_09117_v1\\paired_auc_differences.csv": "27f93c0eff6eb070466ff11a3233d857f86ae42447d2d67dce1abd9779b313ad",
+    "runs\\ablation_auc_09117_v1\\roc_curves.png": "5d05997845eda97432c03dd99525669b832be70ab26c3d2c2661435b7bb6f25f",
+    "runs\\ablation_auc_09117_v1\\paired_auc_differences.png": "75ce509a7a582a5450b77be8e9ab3f626b9beb72adda06a6c2169d6b93f04adc",
+    "runs\\ablation_auc_09117_diagnostic_v1\\auc_summary.csv": "fa0a4452c80dbc2c0d3b534e4ca1df42e44a5075ce82653ad8ef22935ad90fed",
+    "runs\\ablation_auc_09117_diagnostic_v1\\auc_runs.csv": "b70646277db21e00b4313b9f1133a9f58ef8fa1db025e3eed18fc65d88f4c8ef",
+    "runs\\ablation_auc_09117_diagnostic_v1\\conditional_effects_summary.csv": "f971d792f09a7c20e900f19ca5c22d5137827f5bc879c523bcc4d081cddee2f6",
+    "runs\\ablation_auc_09117_diagnostic_v1\\conditional_effects.png": "18a8b948ed0447fe27edb2ca659c9be2249fdc09c9f8d85f9b8c3805b8c3eb78",
+    "runs\\ablation_auc_09117_diagnostic_v1\\analysis_verification.json": "a3e8244b770b8daae78431d2c6799b020b1791494d982b5c90b950d3cffc5c7a"
+  },
+  "export_script_sha256": "a7a0db1f719d7d860a543395762b0605b43d2c6c4ca15b27395f8be02a2c59ce",
+  "docx_initial_sha256": "5c93e3a555d9969c7f4cc958027e7692495bb1e600f441def52f3b3d79243fa2",
+  "rendered_pages": 6,
+  "renderer": "Microsoft Word",
+  "visually_checked_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "input_hashes_unchanged": true,
+  "docx_final_sha256": "a17d2ba78707b57d37d41bdcd9e314ce850c7939cc4516f259ab0a330a9e6702",
+  "pdf_sha256": "4bfd946108515df839e2cbd01670224eebba067dc2422a0b84a46019fe7433c8",
+  "layout_verified": true
+}

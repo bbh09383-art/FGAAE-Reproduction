@@ -1,0 +1,69 @@
+{
+  "arms": {
+    "Base": {
+      "adversarial": false,
+      "features": false,
+      "aqt": false
+    },
+    "A": {
+      "adversarial": false,
+      "features": true,
+      "aqt": true
+    },
+    "B": {
+      "adversarial": true,
+      "features": false,
+      "aqt": true
+    },
+    "C": {
+      "adversarial": true,
+      "features": true,
+      "aqt": false
+    },
+    "Full": {
+      "adversarial": true,
+      "features": true,
+      "aqt": true
+    }
+  },
+  "new_training_arms": [
+    "Base",
+    "A",
+    "B",
+    "C"
+  ],
+  "seeds": [
+    2025,
+    2026,
+    2027
+  ],
+  "epochs_per_seed": 60,
+  "iterations": 3,
+  "epochs_per_iteration": 20,
+  "metric": "ROC-AUC",
+  "secondary_score": "reconstruction sum on identical selected checkpoint",
+  "full_reused_from": "D:\\荣珍代码与数据\\代码\\FGAAE_论文复现\\runs\\full_fgaae_improvement_round1\\full_loss_verification",
+  "full_auc_mean": 0.9117440964193119,
+  "precheck": "D:\\荣珍代码与数据\\代码\\FGAAE_论文复现\\runs\\ablation_auc_09117_precheck_v2",
+  "code_sha256": {
+    "run_ablation.py": "b434e10277968f488f88de2f9e14cfa66a352ae0fa9f380fa8b3eb41b89fb8ca",
+    "ablation_core.py": "a71bddb345b76bbb33678ae9f4e50c620ded528f28815cc1663ec09528324ff2"
+  },
+  "frozen_manifest_sha256": "9e30fb408a26e912d7e574087d2090f7b82753b7309c96e517876fb9186e1165",
+  "device": "cuda",
+  "coefficient_candidates": [
+    null,
+    0.01,
+    0.03,
+    0.1,
+    0.3,
+    1.0
+  ],
+  "coefficient_selection": "Historical earlier-file mean AUC and later/full acceptance gate; one candidate per arm shared across seeds.",
+  "bn_without_features": "one unlabelled training-reference calibration pass with Dropout disabled; no parameter updates",
+  "checkpoint_selection": "all eight development files, maximum raw-score AUC, improvement >1e-4",
+  "all_development_previously_inspected": true,
+  "independent_test": false,
+  "same_epochs_not_same_optimizer_updates": true,
+  "extra_tuning_or_arm_selection": false
+}

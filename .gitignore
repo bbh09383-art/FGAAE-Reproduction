@@ -1,0 +1,26 @@
+# Local datasets
+/datasets/
+
+# Keep the registered main ablation and follow-up diagnostics only
+/runs/*
+!/runs/ablation_auc_09117_v1/
+!/runs/ablation_auc_09117_diagnostic_v1/
+
+# Model checkpoints and binary arrays
+*.pt
+*.pth
+*.npy
+*.npz
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local credentials and editor temporary files
+.env
+.env.*
+!.env.example
+~$*
+*.tmp

@@ -1,0 +1,129 @@
+{
+  "complete": true,
+  "post_hoc_diagnostic": true,
+  "metric": "ROC-AUC",
+  "new_runs": 6,
+  "new_epochs": 360,
+  "reused_cases": [
+    "Base",
+    "B"
+  ],
+  "independent_test": false,
+  "base_b_retrained": false,
+  "summary": [
+    {
+      "arm": "Base",
+      "auc_mean": 0.8543304798747906,
+      "auc_sample_std": 0.049007997451613584,
+      "reconstruction_auc_mean": 0.8543304798747906,
+      "reconstruction_auc_sample_std": 0.049007997451613584
+    },
+    {
+      "arm": "GAN_only",
+      "auc_mean": 0.8435794712709934,
+      "auc_sample_std": 0.053575004914539266,
+      "reconstruction_auc_mean": 0.843617302444895,
+      "reconstruction_auc_sample_std": 0.053528733779214965
+    },
+    {
+      "arm": "AQT_only",
+      "auc_mean": 0.8560680650420583,
+      "auc_sample_std": 0.047524676829159375,
+      "reconstruction_auc_mean": 0.8560680650420583,
+      "reconstruction_auc_sample_std": 0.047524676829159375
+    },
+    {
+      "arm": "B",
+      "auc_mean": 0.8460498404265485,
+      "auc_sample_std": 0.05158619591200494,
+      "reconstruction_auc_mean": 0.8460858515439734,
+      "reconstruction_auc_sample_std": 0.051545265393133415
+    }
+  ],
+  "conditional_effects": [
+    {
+      "score": "auc_primary",
+      "effect": "AQT_with_GAN",
+      "mean": 0.0024703691555549856,
+      "sample_std": 0.0021611814476568112,
+      "seeds_positive": 3
+    },
+    {
+      "score": "auc_primary",
+      "effect": "AQT_without_GAN",
+      "mean": 0.0017375851672677411,
+      "sample_std": 0.0015712153117138363,
+      "seeds_positive": 3
+    },
+    {
+      "score": "auc_primary",
+      "effect": "B_minus_Base",
+      "mean": -0.008280639448242089,
+      "sample_std": 0.0026222960442916273,
+      "seeds_positive": 0
+    },
+    {
+      "score": "auc_primary",
+      "effect": "GAN_with_AQT",
+      "mean": -0.01001822461550983,
+      "sample_std": 0.004061962582695495,
+      "seeds_positive": 0
+    },
+    {
+      "score": "auc_primary",
+      "effect": "GAN_without_AQT",
+      "mean": -0.010751008603797074,
+      "sample_std": 0.004579376651795296,
+      "seeds_positive": 0
+    },
+    {
+      "score": "auc_primary",
+      "effect": "interaction",
+      "mean": 0.0007327839882872444,
+      "sample_std": 0.0006038802853718295,
+      "seeds_positive": 3
+    },
+    {
+      "score": "auc_reconstruction",
+      "effect": "AQT_with_GAN",
+      "mean": 0.0024685490990785284,
+      "sample_std": 0.002152131002559394,
+      "seeds_positive": 3
+    },
+    {
+      "score": "auc_reconstruction",
+      "effect": "AQT_without_GAN",
+      "mean": 0.0017375851672677411,
+      "sample_std": 0.0015712153117138363,
+      "seeds_positive": 3
+    },
+    {
+      "score": "auc_reconstruction",
+      "effect": "B_minus_Base",
+      "mean": -0.008244628330817108,
+      "sample_std": 0.002587183227509109,
+      "seeds_positive": 0
+    },
+    {
+      "score": "auc_reconstruction",
+      "effect": "GAN_with_AQT",
+      "mean": -0.00998221349808485,
+      "sample_std": 0.004020726873839106,
+      "seeds_positive": 0
+    },
+    {
+      "score": "auc_reconstruction",
+      "effect": "GAN_without_AQT",
+      "mean": -0.010713177429895637,
+      "sample_std": 0.0045306117145487886,
+      "seeds_positive": 0
+    },
+    {
+      "score": "auc_reconstruction",
+      "effect": "interaction",
+      "mean": 0.0007309639318107871,
+      "sample_std": 0.0005933637449712154,
+      "seeds_positive": 3
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "candidate_by_selection_auc": "reconstruction_only",
+  "calibration_accepted": false,
+  "deployed_candidate": "reconstruction_only",
+  "shared_across_seeds": true,
+  "later_and_full_development_used_for_acceptance": true,
+  "independent_test": false
+}

@@ -1,0 +1,4 @@
+arm,seed,auc_primary,auc_reconstruction,auc_uncalibrated,best_epoch,generator_updates,critic_updates,critic_weight,coefficient_candidate
+Base,2025,0.9079935612902068,0.9079935612902068,0.9079935612902068,4,4740,0,0.0,reconstruction_only
+Base,2026,0.8430549374947105,0.8430549374947105,0.8430549374947105,15,4740,0,0.0,reconstruction_only
+Base,2027,0.8119429408394543,0.8119429408394543,0.8119429408394543,13,4740,0,0.0,reconstruction_only

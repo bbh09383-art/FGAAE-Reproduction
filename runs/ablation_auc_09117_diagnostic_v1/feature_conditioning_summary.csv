@@ -1,0 +1,11 @@
+score,contrast,mean,sample_std,seeds_positive
+auc_primary,GAN_with_features_AQT_on,0.03783223018410253,0.019438470032479987,3
+auc_primary,GAN_without_features_AQT_on,-0.010018224615509866,0.004061962582695434,0
+auc_primary,feature_GAN_interaction_AQT_on,0.0478504547996124,0.022749751270389498,3
+auc_primary,features_with_GAN_AQT_on,0.06569425599276346,0.03090195157268096,3
+auc_primary,features_without_GAN_AQT_on,0.01784380119315106,0.009804578513825121,3
+auc_reconstruction,GAN_with_features_AQT_on,0.017948925705164487,0.02262219263874396,2
+auc_reconstruction,GAN_without_features_AQT_on,-0.009982213498084888,0.004020726873839044,0
+auc_reconstruction,feature_GAN_interaction_AQT_on,0.027931139203249373,0.026359716692366055,3
+auc_reconstruction,features_with_GAN_AQT_on,0.04577494039640043,0.027804298049087756,3
+auc_reconstruction,features_without_GAN_AQT_on,0.01784380119315106,0.009804578513825121,3

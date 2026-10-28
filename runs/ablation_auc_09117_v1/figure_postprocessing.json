@@ -1,0 +1,16 @@
+{
+  "code_sha256": "825855a8e75d46884cb9ec909723f09d9d613ecc7b8de90228d15e87663fdfd8",
+  "input_tables_sha256": {
+    "auc_summary.csv": "6646898e4f9e96554efdac8b5daf243346216c048742a8c9f1cc8f21d90e604d",
+    "auc_runs.csv": "14d96c0606c1aa71e0c8f770ebe6e56651d346255caf8fef07fcf27502cf9f08",
+    "paired_auc_differences.csv": "27f93c0eff6eb070466ff11a3233d857f86ae42447d2d67dce1abd9779b313ad",
+    "roc_interpolation.csv": "5da3ae263707eacb3a4c58ac729b6d673eb59e7a0083bb2bf8739dbdf9208320"
+  },
+  "original_roc_png_sha256": "f83f623af967e8bc81346f1fd1c256f6c89e7fc012b62f913f3359a9f8c85224",
+  "roc_png_sha256": "5d05997845eda97432c03dd99525669b832be70ab26c3d2c2661435b7bb6f25f",
+  "paired_png_sha256": "75ce509a7a582a5450b77be8e9ab3f626b9beb72adda06a6c2169d6b93f04adc",
+  "metrics_unchanged": true,
+  "roc_method": "1001 fixed FPR points; linear interpolation per seed; mean and pointwise sample SD; matching line/band colors",
+  "numeric_auc_method": "Experiment tables use roc_auc_score on original per-seed scores, not integration of interpolated display curves.",
+  "paired_plot": "Full minus variant for each of three seeds; bars mean, whiskers sample SD; not confidence intervals."
+}

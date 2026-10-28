@@ -1,0 +1,21 @@
+{
+  "scope": "Completed AUC-only five-group experiment and report/figure postprocessing; no model or metric changes during reporting.",
+  "training_source_matches_registration": true,
+  "local_report_links_verified": true,
+  "artifacts_sha256": {
+    "RESULTS.md": "ac82ca3e430cf6ba967b031764fbe685c936298b53f074f5e16bcd0dd93b9453",
+    "report.json": "deb852cd83874e90ab82124925017367e06d601b7bcee4c2382b1734f72b3de5",
+    "auc_runs.csv": "14d96c0606c1aa71e0c8f770ebe6e56651d346255caf8fef07fcf27502cf9f08",
+    "auc_summary.csv": "6646898e4f9e96554efdac8b5daf243346216c048742a8c9f1cc8f21d90e604d",
+    "paired_auc_differences.csv": "27f93c0eff6eb070466ff11a3233d857f86ae42447d2d67dce1abd9779b313ad",
+    "paired_auc_statistics.csv": "af921011747ecd68d5d80857ade0f451f6ec3e7a05eafac527d4a96ca778eb8a",
+    "final_verification.json": "f51a7d4cd445346e5da2aa2b505f78da287c97652082e298ce2c4939df3ba17d",
+    "figure_postprocessing.json": "64ccbb72cdfb2f4a88e63681a6275cfa5f7f4d30203107a18ae9a2d8bf2a2d0a",
+    "roc_curves.png": "5d05997845eda97432c03dd99525669b832be70ab26c3d2c2661435b7bb6f25f",
+    "roc_curves.pdf": "50f7a3b88a433d35703318512438b68c5de814e03cdaeacc14818756b4169518",
+    "paired_auc_differences.png": "75ce509a7a582a5450b77be8e9ab3f626b9beb72adda06a6c2169d6b93f04adc",
+    "paired_auc_differences.pdf": "48f2168883049cd3a272a04c0e864344a70ee5c67ce53c65c4b7478421833f04"
+  },
+  "postprocessing_code_sha256": "825855a8e75d46884cb9ec909723f09d9d613ecc7b8de90228d15e87663fdfd8",
+  "independent_test": false
+}

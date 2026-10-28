@@ -1,0 +1,11 @@
+{
+  "expert_pretraining_loaded": false,
+  "bn_calibration": {
+    "method": "one deterministic pass; cumulative BN batch statistics; encoder Dropout disabled",
+    "reference_rows": 6620,
+    "batches": 26,
+    "batch_size": 256,
+    "parameter_updates": 0,
+    "expert_features_or_labels_used": false
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "torch": "2.8.0+cu129",
+  "numpy": "2.3.2",
+  "pandas": "2.3.3",
+  "cuda": "12.9",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "cudnn_allow_tf32": true,
+  "cublas_workspace_config": ":4096:8"
+}

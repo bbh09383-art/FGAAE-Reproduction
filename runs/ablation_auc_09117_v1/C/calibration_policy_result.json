@@ -1,0 +1,8 @@
+{
+  "candidate_by_selection_auc": "relative_1",
+  "calibration_accepted": true,
+  "deployed_candidate": "relative_1",
+  "shared_across_seeds": true,
+  "later_and_full_development_used_for_acceptance": true,
+  "independent_test": false
+}

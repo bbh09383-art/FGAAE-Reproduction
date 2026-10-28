@@ -1,0 +1,109 @@
+{
+  "training_code_snapshots_match_registration": true,
+  "new_training_runs": 12,
+  "new_training_epochs": 720,
+  "auc_only_histories": true,
+  "score_memberships_identical": true,
+  "reported_auc_recomputed_from_exported_scores": true,
+  "new_model_cuda_replay_frames": 127104,
+  "new_model_cuda_replay_max_difference": 0.0,
+  "models": [
+    {
+      "arm": "Base",
+      "seed": 2025,
+      "epochs": 60,
+      "auc_recomputed": 0.9079935612902068,
+      "cuda_replay_frames": 10592,
+      "cuda_replay_max_difference": 0.0
+    },
+    {
+      "arm": "Base",
+      "seed": 2026,
+      "epochs": 60,
+      "auc_recomputed": 0.8430549374947105,
+      "cuda_replay_frames": 10592,
+      "cuda_replay_max_difference": 0.0
+    },
+    {
+      "arm": "Base",
+      "seed": 2027,
+      "epochs": 60,
+      "auc_recomputed": 0.8119429408394543,
+      "cuda_replay_frames": 10592,
+      "cuda_replay_max_difference": 0.0
+    },
+    {
+      "arm": "A",
+      "seed": 2025,
+      "epochs": 60,
+      "auc_recomputed": 0.9194221834203515,
+      "cuda_replay_frames": 10592,
+      "cuda_replay_max_difference": 0.0
+    },
+    {
+      "arm": "A",
+      "seed": 2026,
+      "epochs": 60,
+      "auc_recomputed": 0.8736524594358164,
+      "cuda_replay_frames": 10592,
+      "cuda_replay_max_difference": 0.0
+    },
+    {
+      "arm": "A",
+      "seed": 2027,
+      "epochs": 60,
+      "auc_recomputed": 0.8286609558494601,
+      "cuda_replay_frames": 10592,
+      "cuda_replay_max_difference": 0.0
+    },
+    {
+      "arm": "B",
+      "seed": 2025,
+      "epochs": 60,
+      "auc_recomputed": 0.9027135287007956,
+      "cuda_replay_frames": 10592,
+      "cuda_replay_max_difference": 0.0
+    },
+    {
+      "arm": "B",
+      "seed": 2026,
+      "epochs": 60,
+      "auc_recomputed": 0.8336257124058559,
+      "cuda_replay_frames": 10592,
+      "cuda_replay_max_difference": 0.0
+    },
+    {
+      "arm": "B",
+      "seed": 2027,
+      "epochs": 60,
+      "auc_recomputed": 0.8018102801729938,
+      "cuda_replay_frames": 10592,
+      "cuda_replay_max_difference": 0.0
+    },
+    {
+      "arm": "C",
+      "seed": 2025,
+      "epochs": 60,
+      "auc_recomputed": 0.9384540427289461,
+      "cuda_replay_frames": 10592,
+      "cuda_replay_max_difference": 0.0
+    },
+    {
+      "arm": "C",
+      "seed": 2026,
+      "epochs": 60,
+      "auc_recomputed": 0.9180613824446973,
+      "cuda_replay_frames": 10592,
+      "cuda_replay_max_difference": 0.0
+    },
+    {
+      "arm": "C",
+      "seed": 2027,
+      "epochs": 60,
+      "auc_recomputed": 0.8508517669303278,
+      "cuda_replay_frames": 10592,
+      "cuda_replay_max_difference": 0.0
+    }
+  ],
+  "independent_test": false
+}

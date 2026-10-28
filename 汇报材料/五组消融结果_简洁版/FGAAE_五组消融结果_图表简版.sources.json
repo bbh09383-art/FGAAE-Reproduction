@@ -1,0 +1,35 @@
+{
+  "scope": "Only five primary-AUC groups requested in the screenshot",
+  "planned_pages": 2,
+  "random_seeds": [
+    2025,
+    2026,
+    2027
+  ],
+  "standard_deviation": "sample (ddof=1)",
+  "table_values_verified_against_screenshot": [
+    "0.8543 ± 0.0490",
+    "0.8739 ± 0.0454",
+    "0.8460 ± 0.0516",
+    "0.9025 ± 0.0458",
+    "0.9117 ± 0.0360"
+  ],
+  "input_sha256": {
+    "runs\\ablation_auc_09117_v1\\auc_summary.csv": "6646898e4f9e96554efdac8b5daf243346216c048742a8c9f1cc8f21d90e604d",
+    "runs\\ablation_auc_09117_v1\\auc_runs.csv": "14d96c0606c1aa71e0c8f770ebe6e56651d346255caf8fef07fcf27502cf9f08",
+    "runs\\ablation_auc_09117_v1\\roc_curves.png": "5d05997845eda97432c03dd99525669b832be70ab26c3d2c2661435b7bb6f25f",
+    "runs\\ablation_auc_09117_v1\\paired_auc_differences.png": "75ce509a7a582a5450b77be8e9ab3f626b9beb72adda06a6c2169d6b93f04adc"
+  },
+  "docx_initial_sha256": "a33d3a3da2249c237d190323affc355556c65e90ee3cd5065ef13d07303c7379",
+  "tables": 1,
+  "embedded_figures": 3,
+  "rendered_pages": 2,
+  "visually_checked_pages": [
+    1,
+    2
+  ],
+  "renderer": "Microsoft Word",
+  "docx_final_sha256": "bf0ce3b5af0e310e44dcbc65b50fedd90f0ce2c0217a284ff5f84dffbaab45c1",
+  "pdf_sha256": "62fb64820f133a66f927ebae2b6f440d3239d1c797dae9849a0e582b5110c7d3",
+  "source_results_unchanged": true
+}

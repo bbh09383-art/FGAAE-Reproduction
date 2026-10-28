@@ -1,0 +1,45 @@
+{
+  "parameter_changes": {
+    "encoder": 0.5136479201621986,
+    "decoder": 4.422518184569877,
+    "teacher": 0.0,
+    "student": 0.0,
+    "critic": 12.05189400071107
+  },
+  "encoder_bn_changes_selected": {
+    "encoder.convolutions.1.running_mean": 0.0,
+    "encoder.convolutions.1.running_var": 0.0,
+    "encoder.convolutions.1.num_batches_tracked": 0.0,
+    "encoder.convolutions.4.running_mean": 0.0,
+    "encoder.convolutions.4.running_var": 0.0,
+    "encoder.convolutions.4.num_batches_tracked": 0.0,
+    "encoder.convolutions.8.running_mean": 0.0,
+    "encoder.convolutions.8.running_var": 0.0,
+    "encoder.convolutions.8.num_batches_tracked": 0.0
+  },
+  "encoder_bn_changes_latest": {
+    "encoder.convolutions.1.running_mean": 0.0,
+    "encoder.convolutions.1.running_var": 0.0,
+    "encoder.convolutions.1.num_batches_tracked": 0.0,
+    "encoder.convolutions.4.running_mean": 0.0,
+    "encoder.convolutions.4.running_var": 0.0,
+    "encoder.convolutions.4.num_batches_tracked": 0.0,
+    "encoder.convolutions.8.running_mean": 0.0,
+    "encoder.convolutions.8.running_var": 0.0,
+    "encoder.convolutions.8.num_batches_tracked": 0.0
+  },
+  "generator_updates": 4740,
+  "critic_updates": 23700,
+  "retained_per_iteration": [
+    20000,
+    20000,
+    20000
+  ],
+  "stage1_reused": false,
+  "stage2_epochs": 60,
+  "active_modules": {
+    "adversarial": true,
+    "features": false,
+    "aqt": false
+  }
+}

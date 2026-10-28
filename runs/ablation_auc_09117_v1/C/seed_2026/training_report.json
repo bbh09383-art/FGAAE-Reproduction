@@ -1,0 +1,61 @@
+{
+  "training_complete": true,
+  "arm": "C",
+  "seed": 2026,
+  "selection": {
+    "selected_by": "validation ROC-AUC; negative reconstruction loss when only one class is available",
+    "best_epoch": 1,
+    "best_validation_selection_score": 0.8801906223150106,
+    "epochs_ran": 60,
+    "early_stopped": false,
+    "test_used_for_selection": false
+  },
+  "uncalibrated_auc": 0.8801906223150106,
+  "reconstruction_auc": 0.8801306579543163,
+  "uncalibrated_model_sha256": "062503baaff6704b5cedc19a5c87e7929f5a0d7e99a86e1beafe04644e86ed6f",
+  "audit": {
+    "parameter_changes": {
+      "encoder": 0.07591782352149816,
+      "decoder": 0.7495897046874656,
+      "teacher": 0.0,
+      "student": 0.35005019245130653,
+      "critic": 2.435324438674994
+    },
+    "encoder_bn_changes_selected": {
+      "encoder.convolutions.1.running_mean": 0.0,
+      "encoder.convolutions.1.running_var": 0.0,
+      "encoder.convolutions.1.num_batches_tracked": 0.0,
+      "encoder.convolutions.4.running_mean": 0.0,
+      "encoder.convolutions.4.running_var": 0.0,
+      "encoder.convolutions.4.num_batches_tracked": 0.0,
+      "encoder.convolutions.8.running_mean": 0.0,
+      "encoder.convolutions.8.running_var": 0.0,
+      "encoder.convolutions.8.num_batches_tracked": 0.0
+    },
+    "encoder_bn_changes_latest": {
+      "encoder.convolutions.1.running_mean": 0.0,
+      "encoder.convolutions.1.running_var": 0.0,
+      "encoder.convolutions.1.num_batches_tracked": 0.0,
+      "encoder.convolutions.4.running_mean": 0.0,
+      "encoder.convolutions.4.running_var": 0.0,
+      "encoder.convolutions.4.num_batches_tracked": 0.0,
+      "encoder.convolutions.8.running_mean": 0.0,
+      "encoder.convolutions.8.running_var": 0.0,
+      "encoder.convolutions.8.num_batches_tracked": 0.0
+    },
+    "generator_updates": 4740,
+    "critic_updates": 23700,
+    "retained_per_iteration": [
+      20000,
+      20000,
+      20000
+    ],
+    "stage1_reused": true,
+    "stage2_epochs": 60,
+    "active_modules": {
+      "adversarial": true,
+      "features": true,
+      "aqt": false
+    }
+  }
+}
